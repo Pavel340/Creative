@@ -1,0 +1,479 @@
+#wrapper {
+	background-color: rgba(255,255,255,1);
+	max-width: 2048px;
+	cursor: default;
+}
+
+/* Header */
+
+header {
+	background-image: url('../images/header-background.jpg');
+	background-size: 100% 100%;
+	cursor: default;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10%;
+}
+
+.menu {
+	margin: 2% 0 0 2%;
+}
+
+.text {
+	padding: 5% 0 10% 0;
+	text-align: center;
+}
+
+.text p {
+	font-size: 1rem;
+	font-family: "HelveticaThin";
+	color: rgb(255, 255, 255);
+	font-weight: 100;
+	font-style: bold;
+	
+}
+
+.text span {
+	font-size: 4rem;
+	font-family: "SourceSansProRegular";
+}
+
+.text i {
+	font-family: "FreightTextBookItalic";
+	font-style: italic;
+	font-size: 1.5rem;
+}
+
+.btn-header {
+	font-family: "SourceSansProBold";
+	border-radius: 6px;
+	padding: 1%;
+	margin: 1%;
+	width: 190px;
+	height: 45px;
+	margin-bottom: 1%;
+	background-color: rgb(255, 255, 255);
+	color: rgb(54, 60, 78);
+	font-size: 1rem;
+	border: none;
+	font-weight: bold;
+}
+
+#play {
+	margin: 1% auto;
+}
+
+.learn {
+	background-color: rgb(255, 242, 0);
+}
+
+/* Hidden-menu */
+
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 2% 0 0 2%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 250px;
+  background-color: rgba(86, 60, 129, 0.5);
+  height: 100%;
+  top: 0;
+  left: -250px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu li a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu {
+	margin: 2% 0 0 2%;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.btn-menu span {
+  display: block;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+  background-color: rgba(125, 123, 125, 0.8);
+}
+
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
+/* AboutUs */
+
+.aboutUs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	padding: 3% 0;
+}
+
+.item {
+	text-align: center;
+	font-family: "HelveticaLight";
+	color: rgb(57, 60, 68);
+	flex-basis: 400px;
+	margin: 1%;
+	box-sizing: border-box;
+}
+
+.item img {
+	max-width: 80%;
+}
+
+.item h1 {
+	font-size: 1.5em;
+	padding-bottom: 1%;
+}
+
+.item p {
+	font-size: 1em;
+	font-family: "HelveticaRegular";
+}
+
+/* Project */
+
+.project {
+	text-align: center;
+	position: relative;
+}
+
+.project p {
+	font-size: 3rem;
+	font-family: "HelveticaRegular";
+	color: rgb(19, 120, 204);
+	margin-bottom: 1%;
+}
+
+.projectSlyde {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1%;
+}
+
+.projectSlyde button {
+	border: none;
+	background-color: rgb(255, 255, 255);
+	padding: 0;
+	margin: 0;
+}
+
+.projectSlyde button img {
+	max-width: 100%;
+}
+
+#projectImg {
+	max-width: 85%;
+}
+
+.newProject {
+	box-sizing: border-box;
+	bottom: 0;
+	background: rgb(41, 156, 181);
+	background: linear-gradient(to left, rgb(41, 156, 181), rgb(22, 195, 205));
+	width: 100%;
+	text-align: left;
+	padding: 2% 4%;
+	position: absolute;
+
+}
+
+.newProject h1 {
+	font-size: 2rem;
+	font-family: "HelveticaLight";
+	color: rgb(255, 255, 255);
+	margin-bottom: 1%;
+}
+
+.newProject p {
+	font-size: 1rem;
+	font-family: "HelveticaLight";
+	color: rgb(255, 255, 255);
+}
+
+.newProject button {
+	position: absolute;
+	bottom: 30%;
+	border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family: "SourceSansProRegular";
+  color: rgb(54, 60, 78);
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 250px;
+	height: 50px;
+  border: none;
+  right: 5%;
+}
+
+/* Team */
+.team {
+	padding: 0 4%;
+	margin-bottom: 6%;
+}
+
+.team h1 {
+	font-size: 2rem;
+	font-family: "HelveticaNeueLTStd";
+	color: rgb(57, 60, 68);
+	margin: 4% 0;
+}
+
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.person {
+  text-align: center;
+  font-weight: bold;
+  flex-basis: 200px;
+}
+
+.person img {
+	max-width: 100%;
+}
+
+.person p {
+	font-size: 1em;
+	font-family: "CentraleSansRegular";
+  color: rgb(57, 60, 68);
+  padding: 1%;
+}
+
+.person span {
+	font-size: 1em;
+	font-family: "CentraleSansRegular";
+  color: rgb(244, 67, 54);
+}
+
+.howHiring {
+	background-image: url(../images/team-background.jpg);
+	background-size: 100% 100%;
+	box-sizing: border-box;
+	text-align: left;
+	padding: 2% 4%;
+	position: relative;
+}
+
+.howHiring h1 {
+	font-size: 2rem;
+	font-family: "HelveticaLight";
+	color: rgb(255, 255, 255);
+	margin-bottom: 1%;
+	font-weight: bold;
+}
+
+.howHiring p {
+	font-size: 1rem;
+	font-family: "HelveticaLight";
+	color: rgb(255, 255, 255);
+}
+
+.howHiring button {
+	position: absolute;
+	bottom: 30%;
+	border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family: "SourceSansProRegular";
+  color: rgb(54, 60, 78);
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 250px;
+	height: 50px;
+  border: none;
+  right: 5%;
+}
+
+/* footer */
+
+footer {
+	background-image: url(../images/footer-background.jpg);
+	background-size: 100% 100%;
+	padding: 5% 5% 3% 5%;
+}
+
+.itemFooter {
+	flex-basis: 200px;
+	text-align: left;
+}
+
+.itemFooter h1 {
+	display: block;
+	font-family: "HelveticaNeueLTStd";
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	margin: 5% 0;
+}
+
+.itemFooter a {
+	text-decoration: none;
+	font-family: "HelveticaUltraLight";
+	font-size: 1em;
+	color: rgb(181, 177, 177);
+	margin: 5% 0;
+	display: block;
+}
+
+.itemFooter button {
+	background-color: rgb(255, 242, 0);
+	font-family: "HelveticaNeueLTStd";
+	color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 1% 2%;
+	display: inline;
+}
+
+.footerLogo {
+	flex-basis: 300px;
+  text-align: right;
+}
+
+.footerLogo  h1{
+	font-size: 1.5em;
+	font-family: "SourceSansProRegular";
+  color: rgb(255, 255, 255);
+  margin: 10% 0;
+}
+
+.footerLogo p {
+	text-decoration: none;
+	font-family: "HelveticaUltraLight";
+	font-size: 1em;
+	color: rgb(181, 177, 177);
+	margin: 5% 0;
+	display: block;
+}
+
+.footer {
+	font-family: "FreightTextBookItalic";
+	color: rgb(181, 177, 177);
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.newProject {
+		text-align: center;
+	}
+
+	.newProject button {
+		position: relative;
+		width: 200px;
+		bottom: 25%;
+		right: 0;
+	}
+
+	.howHiring {
+		text-align: center;
+	}
+
+	.howHiring button {
+		position: relative;
+		width: 200px;
+		bottom: 25%;
+		right: 0;
+		margin-top: 1%;
+	}
+}
+@media screen and (max-width: 865px) {
+	.btn-header {
+		display: block;
+		margin: 1% auto;
+	}
+	.newProject {
+		position: relative;
+	}
+}
+@media screen and (max-width: 550px) {
+	.flexbox {
+		justify-content: center;
+	}
+
+	.person {
+		flex-basis: 250px;
+		margin: 1%;
+		box-sizing: border-box;
+	}
+
+	.text p {
+		font-size: .8rem;
+	}
+
+	.text span {
+		font-size: 1rem;
+	}
+
+	.text i {
+		font-size: 1rem;
+	}
+
+	.btn-header {
+	width: 100px;
+	height: 25px;
+	font-size: .5rem;
+	}
+
+	#play {
+	max-width: 50%;
+	}
+
+	.itemFooter {
+		text-align: center;
+	}
+	.team h1 {
+		text-align: center;
+	}
+}

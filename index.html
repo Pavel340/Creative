@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Creative</title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" href="css/stylename.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+	</head>
+	<body>
+	<script src="js/function.js"></script>
+		<div id="wrapper">
+			<a name="header"></a>
+			<!-- Боковое меню -->
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+			<label class="btn-menu" for="hmt">
+			  <span class="first"></span>
+			  <span class="second"></span>
+			  <span class="third"></span>
+			</label>
+			<ul class="hidden-menu">
+			  <li><a href="#header">Главная</a></li>  
+			  <li><a href="#about">О нас</a></li>
+			  <li><a href="#proj">Наши работы</a></li>  
+			  <li><a href="#team">Наша команда</a></li>
+			</ul>
+			<!-- Хидер -->
+			<header>
+				<div class="text">
+					<p>СТУДИЯ<br>
+					<span>CREATIVE TIME</span><br>
+					<i>Здравствуйте, мы разрабатываем мобильные и веб-интерфейсы, <br> которые просты в использовании</i></p>
+					<img src="images/icon/play-icon.png" alt="play" id="play" onmouseout= this.src='images/icon/play-icon.png' onmouseover=this.src='images/icon/play-icon-active.png'><br>
+					<button class="btn-header">ЗАКАЗАТЬ</button>
+					<button class="btn-header learn">УЗНАТЬ БОЛЬШЕ</button>
+				</div>
+			</header>
+			<!-- About Us -->
+			<div class="aboutUs">
+			<a name="about"></a>
+				<div class="item">
+					<img src="images/getStartedInstantly.png" alt="getStartedInstantly">
+					<h1>Мгновенный старт</h1> 
+					<p>Мы начнем свой проект немедленно используя уникальные стратегии. Просто нажмите <span style="color:rgb(216, 32, 40);">Начать</span> и мы сделаем для вас работу.</p>
+				</div>
+				<div class="item">
+					<img src="images/pc.png" alt="pc">
+					<h1>Design & Development</h1>
+					<p>Мы можем предложить Вам полный пакет Design & Development для вашего проекта. Все, что нужно при хорошей сделки.</p>
+				</div>
+				<div class="item">
+					<img src="images/clock.png" alt="clock">
+					<h1>Всегда вовремя</h1>
+					<p>Мы знаем, что Ваше время важно, чтобы его терять. Все, что вам нужно сделать, это установить крайний срок, и мы будем придерживаться его.</p>
+				</div>
+			</div>
+			<!-- Project -->
+			<div class="project">
+				<a name="proj"></a>
+				<p>Вот Некоторые Из Наших Проектов</p>
+				<div class="projectSlyde">
+					<button onclick="imgBack()"><img src="images/icon/arrow_back.png" alt="arrow back"></button>
+					<img src="images/project/img_1.jpg" alt="iPhone5C" id="projectImg">
+					<button onclick="imgNext()"><img src="images/icon/arrow_next.png" alt="arrow next"></button>
+				</div>
+				<div class="newProject">
+							<h1>Вы хотите, получить новый дизайн для вашего продукта?</h1>
+							<p>Мы готовы улучшить интерфейс вашего приложения.</p>
+							<button>начать проект</button>
+				</div>
+			</div>
+			<!-- Team -->
+			<div class="team">
+				<a name="team"></a>
+				<h1>НАША КОМАНДА</h1>
+				<div class="flexbox">
+					<div class="person">
+						<img src="images/team/img_1.png" alt="team">
+						<p>Джонатан Куртен</p>
+						<span>Основатель</span>
+					</div>
+					<div class="person">
+						<img src="images/team/img_2.png" alt="team">
+						<p>Чарли Уэйт</p>
+						<span>UI и UX креативный директор</span>
+					</div>
+					<div class="person">
+						<img src="images/team/img_3.png" alt="team">
+						<p>Келли Вирс</p>
+						<span>Инженер</span>
+					</div>
+					<div class="person">
+						<img src="images/team/img_4.png" alt="team">
+						<p>Франтишек Кривда</p>
+						<span>Дизайнер</span>
+					</div>
+					<div class="person">
+						<img src="images/team/img_5.png" alt="team">
+						<p>Михай Сербан</p>
+						<span>Развитие бизнеса</span>
+					</div>
+				</div>
+			</div>
+			<div class="howHiring">
+					<h1>ПРИГЛАШАЕМ НА РАБОТУ</h1>
+					<p>Creative Time ищет новые таланты, чтобы присоединиться к нашей команде в Сиэтле, штат Вашингтон</p>
+					<button>Присоединиться к нашей команде</button>
+			</div>
+			<!-- Footer -->
+			<footer>
+				<div class="flexbox">
+					<div class="itemFooter">
+						<h1> Подробнее </h1>
+						<a href="#"> Как Студия работает </a>
+						<a href="#"> Цены </a>
+						<a href="#"> Халява </a>
+						<a href="#"> Наличие </a>
+					</div>
+					<div class="itemFooter">
+						<h1> О нас </h1>
+						<a href="#"> О компании Creative Time </a>
+						<a href="#" class="displayInline"> Работа <button> Мы нанимаем! </button></a>
+					</div>
+					<div class="itemFooter">
+						<h1>Контакты</h1>
+						<a href="#">Email : time@creative.com</a> 
+						<a href="#">Телефон : 646 336 3256</a>
+					</div>
+					<div class="itemFooter footerLogo">
+						<h1>CREATIVE TIME</h1>
+						<p>© 2014 Copyright Creative Time</p>
+					</div>
+				</div>
+				<p class="footer">Сделано с любовью в Румынии.</p>
+			</footer>
+		</div>
+	</body>
+</html>
